@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/*PLEASE IGNORE THE COMMENTS, THEY ARE USEFUL TO ME TO UNDERSTAND AND REMEMBER WHAT I'M WRITING :) */
+
+* {
+    margin: 0;   /*PER METTERE TUTTO INSIEME VICINO*/
+    padding: 0;  /*PER METTERE TUTTO INSIEME VICINO*/
+    box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+
+
+}
+
+header {
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+  display: flex; /*PER METTERE VICINO A QUALCOS'ALTRO*/
+  flex-direction: row; /*PER SPECIFICARE ANCORA DI PIù CHE DEVE STARE IN RIGA*/
+  position: absolute; /*SI ATTACCA ALLA PRIMA COSA CHE TROVA. SE NIENTE, AL MARGINE DELLO SCHERMO*/
+  top: 10%; /*DEFINISCE LE COORDINATE DELLA POSIZIONE ASSOLUTA*/
+  right: 50%; /*DEFINISCE LE COORDINATE DELLA POSIZIONE ASSOLUTA*/
+  transform: translate(50%, 0%); /*AGGIUSTA LE COORDINATE DELLA POSIZIONE ASSOLUTA*/
+  font-size: 0; /*PER TOGLIERE SPAZIO TRA FOTO*/
+}
+
+.container img{
+  border-radius: 20px 0px 0px 20px;
+
+}
+.info{
+  background-color: white;
+  display: flex; /*DICE CHE DEVONO STARE TUTTI VICINI*/
+  flex-direction: column; /*DICE SE IN COLONNA O IN RIGA*/
+  border-radius: 0px 20px 20px 0px;
+
+
+}
+
+.money{
+  font-family: Fraunces;
+  float: left;
+  text-align: left;
+  font-size: 2rem;
+  color: #3D8168;
+  margin-top: 0.7em;
+  font-size:3rem;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+h1{
+  font-family: Fraunces;
+  font-size: 3rem;
+  text-align: left;
+  float:left;
+  margin-bottom: 0.7em;
+  margin-left: 1em;
+  margin-right: 3em;
+}
+
+h2{
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  text-align: left;
+  color: hsl(228, 12%, 48%);
+  line-height:1.5em;
+  margin-bottom: 1.5em;
+  letter-spacing: 8px;
+  margin-top: 3em;
+  margin-left: 2.3em;
+  font-weight:normal;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  text-align: left;
+  color: hsl(228, 12%, 48%);
+  line-height:1.5em;
+  margin-bottom: 0.7em;
+  margin-left: 2em;
+  margin-right: 3em;
+}
+
+
+button {
+  	background-color:#3d8168;
+  	border-radius:15px;
+  	border: none;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Montserrat;
+  	font-weight:bold;
+  	padding:28px 120px;
+  	text-decoration:none;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    margin-top: 2em;
+    font-size: 1.5rem;
+    position: relative;
+    white-space: nowrap; /*PER NON FARE ANDARE A CAPO UN TESTO*/
+
+
+
+
+  }
+
+button:hover {
+  	background-color: #1B3F31;
+  }
+
+button:active {
+  	position:relative;
+  	top:1px;
+}
+
+.immagine img{
+  width: 12%;
+  padding:0;
+  border-radius:0;
+  margin-left: 0px;
+  margin-right: 1em;
+  align-items: center;
+
+}
